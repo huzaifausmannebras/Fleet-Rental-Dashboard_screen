@@ -1,0 +1,119 @@
+body {
+    margin: 0px;
+}
+
+.fuel_efficiency_bottom {
+    display: flex;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1rem;
+    padding: 0 2rem;
+}
+
+.fuel_efficiency_bottom>div {
+    flex: 0.3;
+}
+
+.fuel_efficiency_bottom>div>h2 {
+    font-size: 1rem;
+    color: #333333;
+    margin-bottom: 0.1rem;
+}
+
+.fuel_efficiency_bottom>div>h3 {
+    color: #333333;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.costOwnershipBottom {
+    display: flex;
+    justify-content: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+}
+
+.costOwnershipBottom>div {
+    flex: 0.3;
+}
+
+.costOwnershipBottom>div>h2 {
+    font-size: 1rem;
+    color: #333333;
+    margin-bottom: 0.1rem;
+}
+
+.costOwnershipBottom>div>h3 {
+    color: #333333;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.row {
+    display: flex;
+    /* flex-wrap: nowrap; */
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 50px;
+    padding: 20px 0 0;
+}
+
+.b-60 {
+    display: flex;
+    flex: 1;
+}
+
+.sm_b {
+    background-color: #fff;
+    color: #898989;
+    flex: 1;
+    margin: 0 10px;
+    padding: 15px;
+    border: 1px solid #d7dde4;
+    border-radius: 3px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+
+.sm_b_l {
+    margin: 0 10px;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #d7dde4;
+    border-radius: 3px;
+    width: 45%;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+
+#fuel_costs {
+    height: 300px;
+}
+
+#other_costs {
+    height: 300px;
+}
+
+#service_costs {
+    height: 300px;
+}
+
+#costOwnership {
+    min-height: 300px;
+}
+
+#fuelEfficiency {
+    height: 300px;
+}
+
+.lS_b {
+    flex: 1;
+    margin: 5px 2px;
+    background-color: #fff;
+    color: #898989;
+    flex: 1;
+    margin: 0 10px;
+    padding: 15px;
+    border: 1px solid #d7dde4;
+    border-radius: 3px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}

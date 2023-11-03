@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fleet Rental Chart</title>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/map.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/accessibility.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="lS_b">
+            <div id="fuel_costs">
+            </div>
+        </div>
+        <div class="lS_b">
+            <div id="other_costs">
+            </div>
+        </div>
+        <div class="lS_b">
+            <div id="service_costs">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div id="sale_by_country" class="lS_b">
+            <div id="myTasksCtrlTesting">
+                <div
+                    style="display:flex;justify-content:space-between;align-items:center;color: rgb(51, 51, 51);font-size: 18px;font-weight: bold;margin-bottom: 10px;">
+                    <span style="font-size:1.5rem; color: #4e5f8e">Sales By Country</span>
+                </div>
+                <div id="myTasksList">
+                    <div ng-repeat="task in vehicleStatus"
+                        style="color: black; line-height: 1.5; font-size: 0.85em; border-bottom: 0.1px solid #e6e6e6; padding: 10px 0 10px; letter-spacing: 0.25px;">
+                        <div
+                            style="display:flex;justify-content:space-between;color:#4e5f8e; line-height: 1; font-size: 0.85em; border-bottom: 0.1px solid #e6e6e6; padding: 25px 5px; letter-spacing: 0.25px;">
+                            <div style="font-size:1.1rem;font-weight:300;color: #4e5f8e ;text-transform: uppercase">
+                                {{task.property}}</div>
+                            <div>
+                                <span style="font-size:10px;"> {{task.currency}}</span> <span
+                                    style="font-size:1rem;font-weight:bold">{{task.value}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lS_b">
+            <div id="costOwnership"></div>
+            <div class="costOwnershipBottom">
+                <div>
+                    <h2>Fuel Cost</h2>
+                    <h3 id="fuelCosts"></h3>
+                </div>
+
+                <div>
+                    <h2>Service Cost</h2>
+                    <h3 id="serviceCosts"></h3>
+                </div>
+            </div>
+
+        </div>
+        <div class="lS_b">
+            <div id="fuelEfficiency">
+            </div>
+            <div class="fuel_efficiency_bottom">
+                <div>
+                    <h2>Total Value</h2>
+                    <h3 id="totalValue"></h3>
+                </div>
+                <div>
+                    <h2>Avg. Fuel</h2>
+                    <h3 id="avgFuelCost"></h3>
+                </div>
+                <div>
+                    <h2>Avg. Efficiency</h2>
+                    <h3 id="avgEfficiency"></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class=" lS_b">
+        </div>
+        <div class=" lS_b">
+            <div id="">
+            </div>
+        </div>
+        <div class=" lS_b">
+            <div id="MeterReedings">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class=" lS_b">
+            <div id="idleHistory">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="app.js" type="module"></script>
+</body>
+
+</html>
