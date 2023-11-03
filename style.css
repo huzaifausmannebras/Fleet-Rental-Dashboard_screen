@@ -50,6 +50,57 @@ body {
     margin: 0;
 }
 
+
+
+/* Custom Boxes Styles */
+
+/* Vehicle Status */
+.vehicle_status {
+    flex: 0.5 !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.vehicle_status h2 {
+    color: black;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.vehicle_status ul {
+    list-style: none;
+    padding: 0 1rem;
+}
+
+.vehicle_status ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 1rem;
+    padding: 0.25rem 0;
+    color: #333333;
+    border-bottom: 1px solid #3333331f;
+}
+
+.vehicle_status ul li span {
+    font-size: 1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    min-height: 30px;
+    min-width: 30px;
+    padding: 2px;
+    text-align: center;
+    background-color: pink;
+
+}
+
+
 .row {
     display: flex;
     /* flex-wrap: nowrap; */

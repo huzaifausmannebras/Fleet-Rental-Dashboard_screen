@@ -183,49 +183,6 @@ Highcharts.chart('fuel_costs', {
     },
 });
 
-// Highcharts.chart('costOwnership', {
-//     chart: {
-//         type: 'column'
-//     },
-//     title: {
-//         text: 'Cost of Ownership',
-//         align: 'left'
-//     },
-//     xAxis: {
-//         categories: ['2019', '2020', '2021']
-//     },
-//     yAxis: {
-//         min: 0,
-//         title: {
-//             text: 'Percent'
-//         }
-//     },
-//     tooltip: {
-//         pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>${point.y}</b> ({point.percentage:.0f}%)<br/>',
-//         shared: true
-//     },
-//     plotOptions: {
-//         column: {
-//             stacking: 'percent',
-//             dataLabels: {
-//                 enabled: true,
-//                 format: '{point.percentage:.0f}%'
-//             }
-//         }
-//     },
-//     credits: {
-//         enabled: false,
-//     },
-//     series: [{
-//         name: 'Fuel Costs',
-//         data: [205],
-//         color: "#FCAF00"
-//     }, {
-//         name: 'Service Costs',
-//         data: [166],
-//         color: "#00C3FC"
-//     }]
-// });
 Highcharts.chart('costOwnership', {
     chart: {
         type: 'column',
@@ -319,7 +276,6 @@ Highcharts.chart('costOwnership', {
     }
 });
 
-
 Highcharts.chart('fuelEfficiency', {
     chart: {
         type: 'scatter'
@@ -399,7 +355,7 @@ Highcharts.chart('fuelEfficiency', {
                 '<br>' + this.series.name + ': ' + this.y;
         }
     },
-    // Retrieve the total volume, average fuel cost, and average efficiency values
+
     chart: {
         type: 'scatter',
         events: {
@@ -616,11 +572,34 @@ Highcharts.chart('idleHistory', {
 });
 
 
-// const vehicleStatusData = [
-//     { name: 'Out Of Service', value: 10, color: '#00cc70' },
-//     { name: 'Rented', value: 30, color: '#00cc70' },
-//     { name: 'Active', value: 10, color: '#FFBF00' }
-// ];
+const vehicleStatusData = [
+    { name: 'Out Of Service', value: 10, color: '#00cc70' },
+    { name: 'Rented', value: 30, color: '#00cc70' },
+    { name: 'Active', value: 10, color: '#FFBF00' }
+];
+const vehicle_ul = document.getElementById('vehicle_data_wrapper')
+const vehicleMappedliList = vehicleStatusData.map((data, index) => {
+    return `<li>${data.name}<span style='background:${data.color}'>${data.value}</span></li>`
+})
+vehicle_ul.innerHTML += vehicleMappedliList.join('')
+
+
+
+
+const equipmentData = [
+    { name: 'In Service', value: 10, color: '#00cc70' },
+    { name: 'Pending', value: 30, color: '#0d92df' },
+    { name: 'Active', value: 10, color: '#FFBF00' }
+];
+const equipment_ul = document.getElementById('equipment_data_wrapper')
+const equippedMappedliList = equipmentData.map((data, index) => {
+    return `<li>${data.name}<span style='background:${data.color}'>${data.value}</span></li>`
+})
+equipment_ul.innerHTML += equippedMappedliList.join('')
+
+
+
+// <li>Out Of Service <span>01</span></li>
 
 // let li = vehicleStatusData.map((data, index) => {
 //     return `<li><span class="vehicleStatusData_name">${data.name}</span>
