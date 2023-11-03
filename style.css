@@ -99,6 +99,14 @@ body {
     background-color: pink;
 
 }
+#vehicleRanking {
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+#vehicleRanking h2 {
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 
 .row {
@@ -167,4 +175,41 @@ body {
     border: 1px solid #d7dde4;
     border-radius: 3px;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+
+/* Table  */
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+    color: white;
+    font-weight: 600;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+th,
+td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+}
+
+th {
+    /* background-color: #596386; */
+    color: white;
+}
+
+td {
+color: gray;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.tr_a {
+    /* background-color: #596386; */
+    color: white;
 }
